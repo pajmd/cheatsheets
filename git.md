@@ -9,7 +9,6 @@ You can find out with
 $ git log
 ``
 or
-```
 $ cat .git/HEAD
 ```
 Most of the time, HEAD points to a branch name. HEAD is synonymous with “the last commit in the current branch.”
@@ -55,15 +54,13 @@ $ cat .git/config
         merge = refs/heads/dragndrop
 ```
 
-## Creating and switching branches
-
-### Create a branch
+## Create a branch
 
 ```
 $ git branch
 ```
 
-Creating a repo create automatically a **master** branch
+Creating a repo creates automatically a **master** branch we often want to rename it.
 ```
 $ git init
 $ git log
@@ -71,7 +68,7 @@ fatal: your current branch 'master' does not have any commits yet
 
 ```
 
-To rename a branch
+### To rename a branch
 ```
 $ git branch -M new-branch-name
 ```
@@ -81,14 +78,18 @@ $ git branch -M new-branch-name
 $ git branch -l
 or
 $ git branch
-``
-To list remotes as well
+```
+### To list remotes as well
 ```
 $ git branch -a
 ```
 
-
-### Switch branches
+## Switch branches
+```
+$ git checkout <branch-name> 
+or on newer git
+$ git switch <branch-name> 
+```
 
 ## Push Branch To Remote
 
@@ -101,7 +102,7 @@ For example, if you need to push a branch named “feature” to the “origin�
 $ git push origin feature
 ```
 
-If your upstream branch is not already created, you will need to create it by running the “git push” command with the “-u” option for upstream.
+If your upstream branch (i.e. remote branch) is not already created, you will need to create it by running the “git push” command with the “-u” option for upstream.
 ```
 git push -u origin feature
 ```
@@ -124,8 +125,6 @@ origin  https://github.com/user/repo.git (push)
 custom  https://github.com/user/custom.git (fetch)
 custom  https://github.com/user/custom.git (push)
 ```
-
-## Switch branch
 
 ## Delete branch
 ### Locally
