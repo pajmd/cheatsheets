@@ -165,5 +165,30 @@ If you already pushed it, you will need to do a force push to get rid of it.
 $ git push origin HEAD --force
 ```
 
+## Merging
 
+Several options
+* rebase
+* merge
+* squash
+
+Read this [article](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+The next action will take place from the feature branch perspective.  
+Both branches moeved on and new commits were added on both.
+
+### Rebase
+Puts on top of a feature branch the commit of the  master branch in the process it
+it reassigns ids to the feature commits.
+
+### Merge
+Merges into the feature branch the new main branch added commits and creates a merged commit onto the feature branch
+
+
+### Integrating an approved feature
+
+After a feature has been approved by your team, you have the option of rebasing the feature onto the tip of the main branch before using git merge to integrate the feature into the main code base.
+
+### Squash
+A squash and merge works best when you have too many commits on a single feature, and not all are useful anymore, so you combine them onto the master as a single commit.
 
