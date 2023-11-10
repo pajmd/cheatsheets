@@ -192,3 +192,18 @@ After a feature has been approved by your team, you have the option of rebasing 
 ### Squash
 A squash and merge works best when you have too many commits on a single feature, and not all are useful anymore, so you combine them onto the master as a single commit.
 
+## 10 commands you should remember
+* Adding and Committing Files Together: git commit -am "commitMessage"
+* Creating and Switching to a Git Branch: git checkout -b branchName
+* Delete a Git Branch: git branch -d branchName
+* Renaming a Git Branch: git branch -m [oldBranch] newBranchName
+* Unstaging a Specific File: git reset filename
+* Discarding Changes to a Specific File: git checkout -- filename
+* Updating Your Last Git Commit: git commit --amend -m 'message'
+* Stashing Changes: git stash - git stash pop
+* Reverting Git Commits: git revert commitHash
+* Resetting Git Commits (undo last commit): git reset <--soft | mixed | hard> HEAD^
+
+For more detailed explanation read this [article](https://levelup.gitconnected.com/10-must-know-git-commands-for-software-engineers-ffc6687d6dfd)
+
+
