@@ -80,7 +80,7 @@ $ git checkout new_branch
 
 Create and swicth to new branch
 ```
-$ git checkout -b iss53
+$ git checkout -b new_branch
 ```
 
 ### To rename a branch
