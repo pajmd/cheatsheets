@@ -73,7 +73,7 @@ Create a new branch
 ```
 $ git branch new_branch
 ```
-Swtich to new branch
+Swtich to new branch or an already existing branch
 ```
 $ git checkout new_branch
 ```
