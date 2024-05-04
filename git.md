@@ -56,6 +56,7 @@ $ cat .git/config
 
 ## Create a branch
 
+List branches
 ```
 $ git branch
 ```
@@ -66,6 +67,20 @@ $ git init
 $ git log
 fatal: your current branch 'master' does not have any commits yet
 
+```
+
+Create a new branch
+```
+$ git branch new_branch
+```
+Swtich to new branch
+```
+$ git checkout new_branch
+```
+
+Create and swicth to new branch
+```
+$ git checkout -b iss53
 ```
 
 ### To rename a branch
