@@ -33,6 +33,21 @@ $ git branch alt-history (create new local branch)
 $ git checkout alt-history (point HEAD to it)
 ```
 
+### Summarizing possible action on Detached HEAD state
+In 'detached HEAD' state. You can: 
+* look around
+* make experimental changes and commit them,
+* discard any commits you make in this state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+```
+$ git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+$ git switch -
+```
 ## What's Origin
 
 Origin is just a alias for the remote git url.  
@@ -73,12 +88,12 @@ Create a new branch
 ```
 $ git branch new_branch
 ```
-Swtich to new branch or an already existing branch
+Switch to new branch or an already existing branch
 ```
 $ git checkout new_branch
 ```
 
-Create and swicth to new branch
+Create and switch to new branch
 ```
 $ git checkout -b new_branch
 ```
@@ -202,7 +217,7 @@ Merges into the feature branch the new main branch added commits and creates a m
 
 ### Integrating an approved feature
 
-After a feature has been approved by your team, you have the option of rebasing the feature onto the tip of the main branch before using git merge to integrate the feature into the main code base.
+After a feature has been approved by your team, you have the option of rebasing the feature onto the top of the main branch before using git merge to integrate the feature into the main code base.
 
 ### Squash
 A squash and merge works best when you have too many commits on a single feature, and not all are useful anymore, so you combine them onto the master as a single commit.
