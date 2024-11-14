@@ -222,6 +222,8 @@ After a feature has been approved by your team, you have the option of rebasing 
 ### Squash
 A squash and merge works best when you have too many commits on a single feature, and not all are useful anymore, so you combine them onto the master as a single commit.
 
+Very good [article](https://web.archive.org/web/20130727101330/http://magazine.redhat.com:80/2008/05/02/shipping-quality-code-with-git/) about merging strategies.
+
 ## 10 commands you should remember
 * Adding and Committing Files Together: git commit -am "commitMessage"
 * Creating and Switching to a Git Branch: git checkout -b branchName
