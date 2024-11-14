@@ -222,6 +222,11 @@ After a feature has been approved by your team, you have the option of rebasing 
 ### Squash
 A squash and merge works best when you have too many commits on a single feature, and not all are useful anymore, so you combine them onto the master as a single commit.
 
+### Merging specific files from a branch to another branch
+
+[Git tip: How to "merge" specific files from another branch](https://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/)
+
+### Note:
 Very good [article](https://web.archive.org/web/20130727101330/http://magazine.redhat.com:80/2008/05/02/shipping-quality-code-with-git/) about merging strategies.
 
 ## 10 commands you should remember
